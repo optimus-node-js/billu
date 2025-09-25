@@ -1,0 +1,248 @@
+# Cursor Project Intelligence – Proposal Site
+
+## 🧠 Overview
+This document is the **source of truth** for project-wide intelligence, decision history, user preferences, and implementation standards for the Proposal Site project. It is **version-controlled, actively maintained**, and **must be consulted before making architectural or behavioral decisions**.
+
+---
+
+## 🗂️ Project Structure
+
+```
+proposal-site/
+├── memory-bank/           # Core documentation and live knowledge base
+│   ├── architecture.md    # System architecture and technical decisions
+│   ├── flows/            # User journey and screen transition documentation
+│   └── patterns/         # Implementation patterns and component docs
+├── .cursorrules          # This file (project intelligence rules)
+└── src/                  # Application source code
+    ├── app/              # Next.js App Router
+    └── components/        # React components
+```
+
+---
+
+## 🔁 Memory Bank Protocol
+
+1. **Required Reads**: Every task **must** begin with reading all relevant files in the `memory-bank/` directory.
+2. **Live Updates**: 
+   - Document **all significant changes** immediately.
+   - Use commit messages that reflect updates to project intelligence.
+3. **Manual Triggers**: 
+   - Use `"update memory bank"` to request or confirm memory alignment.
+4. **Automation**: 
+   - A diff of the memory bank must be included in any pull request that alters documentation.
+   - Cursor will flag unreferenced decisions or undocumented changes.
+
+---
+
+## 👤 User Preferences
+
+| Area | Preference |
+|------|------------|
+| Documentation | Must be comprehensive, structured, current |
+| Change Tracking | Document updates inline as they happen |
+| Communication | Clear, concise, and assumption-free |
+| Language | Use formal tone with declarative style |
+| Animation | Smooth, purposeful, performance-optimized |
+| Design | Mobile-first, accessible, emotionally engaging |
+
+> 🔒 *Deviations from preferences must be explicitly justified and approved.*
+
+---
+
+## 🧩 Implementation Patterns
+
+> All significant design and logic patterns must be added here once used more than once.
+
+### Pattern: Screen-Based Navigation
+- **Intent**: Create linear, state-driven navigation for emotional storytelling
+- **Use When**: Single-purpose applications with clear user journeys
+- **Avoid When**: Multi-page applications, complex navigation requirements
+- **Risk**: Limited navigation flexibility
+
+### Pattern: Progressive Disclosure with Animation
+- **Intent**: Reveal information gradually to maintain engagement
+- **Use When**: Storytelling, onboarding, emotional experiences
+- **Avoid When**: Information-dense interfaces, time-critical applications
+- **Risk**: User impatience, accessibility concerns
+
+### Pattern: Interactive Modal Feedback
+- **Intent**: Provide contextual feedback without breaking flow
+- **Use When**: Interactive storytelling, user guidance
+- **Avoid When**: Critical error handling, complex form validation
+- **Risk**: Overuse can feel manipulative
+
+### Pattern: Physics-Based Animation
+- **Intent**: Create natural, engaging animations
+- **Use When**: Celebratory moments, attention-grabbing elements
+- **Avoid When**: Subtle UI elements, performance-critical sections
+- **Risk**: Performance impact, motion sensitivity
+
+### Pattern: Typing Animation Effect
+- **Intent**: Create anticipation and focus attention
+- **Use When**: Important announcements, dramatic reveals
+- **Avoid When**: Long text content, time-sensitive information
+- **Risk**: User impatience, accessibility issues
+
+---
+
+## ⚠️ Known Challenges
+
+> This section must grow during active development. For each challenge:
+
+### Challenge: Animation Performance on Low-End Devices
+- **Description**: Complex animations may cause frame drops on older devices
+- **Workaround**: Use transform and opacity only, respect prefers-reduced-motion
+- **Status**: Monitored
+- **Owner**: Development Team
+
+### Challenge: Accessibility with Motion-Heavy Design
+- **Description**: Extensive animations may impact users with motion sensitivity
+- **Workaround**: Implement prefers-reduced-motion support, provide static alternatives
+- **Status**: Open
+- **Owner**: Development Team
+
+### Challenge: Mobile Touch Interaction Optimization
+- **Description**: Ensuring smooth touch interactions across different devices
+- **Workaround**: Large tap targets, proper touch event handling
+- **Status**: In Progress
+- **Owner**: Development Team
+
+---
+
+## 🔧 Tool Usage Protocol
+
+| Tool | Purpose | Rule |
+|------|---------|------|
+| `memory-bank/` | Source of truth for project context | Must be consulted and updated for all major features |
+| `.cursorrules` | Project intelligence + decision evolution | Read-only unless agreed updates are made |
+| Docs | Markdown format only | All team members must follow naming & structure conventions |
+| Components | React functional components | Use hooks, consistent patterns, proper TypeScript |
+| Animations | Motion library | Transform/opacity only, respect accessibility |
+
+---
+
+## 🧭 Decision Evolution Log
+
+> Tracks critical decisions, reasons, reversals, and debates
+
+### Decision #001 – Single Page Application Architecture
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Chose SPA with state-driven navigation over multi-page routing
+- **Reason**: Better emotional flow control, seamless transitions, simpler state management
+- **Affected Modules**: All components, navigation system
+- **Reversal Conditions**: If complex navigation requirements emerge
+- **Status**: Active
+
+### Decision #002 – Motion Library Selection
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Selected Motion (Framer Motion) over other animation libraries
+- **Reason**: Better performance, React integration, spring physics support
+- **Affected Modules**: All animated components
+- **Reversal Conditions**: If performance issues arise
+- **Status**: Active
+
+### Decision #003 – Progressive Disclosure Pattern
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Implemented gradual information revelation for emotional impact
+- **Reason**: Maintains user engagement, builds anticipation, creates memorable experience
+- **Affected Modules**: All screen components, user flow
+- **Reversal Conditions**: If user testing shows impatience
+- **Status**: Active
+
+### Decision #004 – SweetAlert2 for Modal Interactions
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Used SweetAlert2 for "No" answer feedback instead of custom modals
+- **Reason**: Better styling control, easier customization, consistent behavior
+- **Affected Modules**: QuestionScreen component
+- **Reversal Conditions**: If accessibility issues arise
+- **Status**: Active
+
+### Decision #005 – Dynamic Photo Loading System
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Implemented optimized dynamic photo loading from public/images folder with intelligent stopping
+- **Reason**: Automatic inclusion of new photos, scalable for unlimited photos, better maintainability, optimized performance
+- **Affected Modules**: PhotoScreen component, image asset management
+- **Reversal Conditions**: If performance issues arise with large photo collections
+- **Status**: Active
+
+### Decision #006 – Photo Flip Animation with Story Mapping
+- **Date**: 2025-01-27
+- **Author**: Development Team
+- **Summary**: Added 3D flip animation to photos with dynamic story mapping system
+- **Reason**: Enhanced user engagement, personal storytelling, interactive photo experience
+- **Affected Modules**: PhotoScreen component, new FlipPhotoCard component, photoStories data
+- **Reversal Conditions**: If 3D animations cause accessibility issues
+- **Status**: Active
+
+---
+
+## 🎯 Project-Specific Rules
+
+### Animation Standards
+- **Performance**: Use transform and opacity only for GPU acceleration
+- **Accessibility**: Implement prefers-reduced-motion support
+- **Timing**: Consistent duration (0.8s) and easing across components
+- **Staggering**: Use delays for sequential reveals (0.5s, 1s, 1.5s)
+
+### Component Standards
+- **Structure**: All screen components follow consistent motion wrapper pattern
+- **Props**: Use onNext callback for navigation, consistent prop naming
+- **Styling**: Mobile-first responsive design with Tailwind CSS
+- **State**: Local state management, no external state libraries
+
+### Asset Management
+- **Organization**: Public directory structure by asset type
+- **Optimization**: Next.js Image component for photos, compressed assets
+- **Loading**: Static imports for critical assets, lazy loading for non-critical
+
+### Code Quality
+- **Formatting**: Consistent indentation, clear variable naming
+- **Comments**: Document complex animations and business logic
+- **Performance**: Cleanup timers and intervals, optimize re-renders
+- **Accessibility**: Semantic HTML, ARIA labels, keyboard navigation
+
+---
+
+## 🔒 Enforcement & Review
+
+- This file and `memory-bank/` are subject to weekly review.
+- PRs without appropriate `.cursorrules` or `memory-bank/` updates will be rejected.
+- Cursor will auto-flag inconsistencies or missing patterns based on commit messages and task scope.
+
+---
+
+## 🔄 Change Control
+
+- Edits to `.cursorrules` must follow this protocol:
+  - Proposed via PR with tag: `[INTELLIGENCE RULE UPDATE]`
+  - Includes summary of change + justification
+  - Reviewed by product or engineering lead
+  - Memory bank documentation updated simultaneously
+
+---
+
+## 📊 Project Metrics
+
+### Performance Targets
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Animation Frame Rate**: 60fps on mid-range devices
+- **Bundle Size**: < 500KB gzipped
+
+### Accessibility Standards
+- **WCAG Compliance**: AA level
+- **Keyboard Navigation**: Full functionality
+- **Screen Reader**: Proper announcements
+- **Motion Sensitivity**: Reduced motion support
+
+### User Experience Goals
+- **Emotional Engagement**: High user satisfaction
+- **Completion Rate**: > 90% user completion
+- **Mobile Experience**: Smooth on all devices
+- **Loading Experience**: Engaging loader animation
