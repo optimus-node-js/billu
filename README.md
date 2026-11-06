@@ -4,7 +4,7 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Motion](https://img.shields.io/badge/Motion-FF0055?style=flat-square) ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white)
 
-**Live:** [billo-rani.vercel.app](https://billo-rani.vercel.app)
+**Live:** [love-is-in-air.vercel.app](https://love-is-in-air.vercel.app)
 
 ## Features
 
