@@ -1,60 +1,41 @@
-# ❤️ Proposal Website
+# 💖 Billu — Animated Proposal Website
 
-Make your proposal unforgettable with this beautifully designed Proposal Website.
-With soft animations, heartfelt messages, and an elegant UI, this site turns a simple “I love you” into a magical and memorable experience. ✨
+> A playful, animated multi-screen proposal site built with Next.js: question screens, balloons, flip-photo story cards, confetti and background music.
 
-> ⚠️ This is a **free version**, so some features like background music, some animations are not included. Premium version includes all features. If you want premium code then DM me on Instagram.
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Motion](https://img.shields.io/badge/Motion-FF0055?style=flat-square) ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white)
 
----
+**🌐 Live:** [billo-rani-red.vercel.app](https://billo-rani-red.vercel.app)
 
-## 🛠 Tech Stack
+## ✨ Features
 
-- ⚛️ **Next.js** – React Framework for building fast UI
-- 🎨 **Tailwind CSS** – For modern and responsive styling
-- 🎞️ **Motion** – Smooth entrance and fade animations
-- 🖼️ **Swiper.js** – For smooth image/cards slideshow
+- Multi-step flow: first screen → question → balloons → photo stories → finale
+- Flip photo cards with storytelling captions (`src/data/photoStories.js`)
+- Confetti, SweetAlert2 dialogs, GIF reactions and background audio
+- Smooth entrance animations with Motion; Swiper carousels
 
----
-
-## 🖥 Local Setup
-
-To run this project locally, follow these steps:
+## 🚀 Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/Anuj579/proposal-site.git
+git clone https://github.com/optimus-node-js/billu.git
+cd billu
+```
 
-# Navigate into the folder
-cd proposal-site
-
-# Install dependencies
+```bash
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser to explore the site.
+_Based on the open-source [proposal-site](https://github.com/Anuj579/proposal-site) template by Anuj579, extended with photo storytelling and custom screens._
 
 ---
 
-## 🔗 Social Media
+## 👤 Author
 
-Follow me for more emotional surprise websites and creative dev content:
+**Rahul Vishwakarma** — Senior Full Stack Developer · Ahmedabad, India
 
-- 📷 Instagram: [@anujbuilds](https://instagram.com/anujbuilds)
-- 🎬 YouTube: [@anujbuilds](https://youtube.com/@anujbuilds)
-- 🐦 Twitter: [@anujbuilds](https://twitter.com/anujbuilds)
-- 💼 LinkedIn: [Anuj Chaudhary](https://linkedin.com/in/anujchaudhary549)
+[![Portfolio](https://img.shields.io/badge/Portfolio-rahul--vishwakarma--portfolio.vercel.app-0A66C2?style=flat-square&logo=vercel&logoColor=white)](https://rahul-vishwakarma-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rahul%20Vishwakarma-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rahul-vishwakarma-101346192)
+[![Email](https://img.shields.io/badge/Email-karmarahul67%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:karmarahul67@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-optimus--node--js-181717?style=flat-square&logo=github)](https://github.com/optimus-node-js)
 
----
-
-## ⭐ Support
-
-If you found this project lovely, please consider giving it a ⭐ on [GitHub](https://github.com/Anuj579)  
-Thank you for being here! 🫶  
-Made with emotions by **Anuj** – _@anujbuilds_
-
-✨ If you'd like to support my work directly, you can donate via UPI:  
-**anujbuilds.wallet@phonepe**  
-Even a small contribution helps me keep creating cute, emotional projects 💖
+If you find this project useful, consider giving it a ⭐.
